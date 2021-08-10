@@ -121,28 +121,28 @@ html .btn-primary:hover, html .btn-primary.hover {
     margin-bottom: 0.1rem;
 }
 #formWhatsApp .custom-control-input:checked ~ .custom-control-label::before, .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-    background-color: #0b6156;
-    border-color: #0b6156;
+    background-color: #0b6156 !important;
+    border-color: #0b6156 !important;
 }
 #formWhatsApp #iniciarConversaFormWhatsApp {
-    background-color: #0B6156;
-    color: #fff;
-    border-color: #0B6156 !important;
+    background-color: #0B6156 !important;
+    color: #fff !important;
+    border-color: #829b97 !important;
 }
 #formWhatsApp #iniciarConversaFormWhatsApp span {
-    background-color: #fff;
-    box-shadow: none;
+    background-color: #fff !important;
+    box-shadow: none !important;
 }
 #formWhatsApp #iniciarConversaFormWhatsApp:hover span {
     background-color: #fff !important;
     box-shadow: none !important;
 }
 #formWhatsApp #iniciarConversaFormWhatsApp:hover {
-    opacity: 0.9;
+    opacity: 0.9 !important;
 }
 
 #formWhatsApp #iniciarConversaFormWhatsApp span i {
-    color: #0B6156;
+    color: #0B6156 !important;
 }
 
 #btnWhatsApp {
