@@ -14,8 +14,8 @@
 		<meta name="author" content="espacomercado.com.br">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+		<link rel="shortcut icon" href="img/em/favicon.ico" type="image/x-icon" />
+    	<link rel="apple-touch-icon" href="img/em/apple-touch-icon.png">
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
@@ -67,7 +67,7 @@
 								<div class="header-row">
 									<div class="header-logo">
 										<a href="index.html">
-											<img alt="Porto" width="50%" src="img/em/logo.png">
+											<img alt="Logo" width="60%" src="img/em/logo.png">
 										</a>
 									</div>
 								</div>
@@ -129,30 +129,45 @@
 						<div class="row">
 							<div class="col-md-8 col-lg-8">
 								<div class="custom-top-title-box">
-									<h2 class="text-color-light font-weight-semibold mb-0">Quer Criar um app e site para sua empresa?</h2>
-									<h1 class="text-color-light font-weight-semibold mb-1" style="font-size: 4.3rem;">Criamos sua loja online!</h1>
-									<h3 class="text-color-light font-weight-semibold mb-3" style="font-size: 1.2rem;">Criamos sua loja online e já pronta para vender em até 24hs!</h3>
-
-									<a href="supermercado/index.html" class="btn custom-btn-style-1 text-color-light mb-5" data-hash>Supermercado</a>
-									<a href="farmacia/index.html" class="btn btn-primary custom-btn-style-1 _borders text-color-light ml-2 mb-5" data-hash data-hash-offset="62">Farmácia</a>
+									<span class="text-color-light font-weight-semibold">Quer Criar um app e site para sua empresa?</span>
+									<h1 class="text-color-light">Criamos sua loja online!</h1>
+									<span class="text-color-light font-weight-semibold mb-5 mt-1">Criamos sua loja online e já pronta para vender em até 24hs!</span>
+									<a href="#supermercado" class="btn custom-btn-style-1 text-color-light mb-5" data-hash>SUPERMERCADO</a>
+									<a href="#farmacia" class="btn btn-primary custom-btn-style-1 btn-outline _borders text-color-light ml-2 mb-5" data-hash data-hash-offset="62">FARMÁCIA</a>
 								</div>
 							</div>
 							<div class="col-8 col-md-4 col-lg-4 mx-auto">
 								<div class="owl-carousel custom-arrows-style-1 custom-left-pos-1 custom-background-1 m-0" data-plugin-options="{'items': 1, 'loop': true, 'dots': false, 'nav': true, 'autoplay': true, 'autoplayTimeout': 3000}">
 									<div>
-										<img src="img/em/criar-mercado-online-site-ecommerce.svg" alt class="img-fluid" />
+										<img src="img/em/overview-carousel-1.jpg" alt class="img-fluid" />
 									</div>	
 									<div>
-										<img src="img/em/criar-mercado-online-site-ecommerce2.svg" alt class="img-fluid" />
+										<img src="img/em/overview-carousel-1.jpg" alt class="img-fluid" />
 									</div>	
 									<div>
-										<img src="img/em/criar-mercado-online-site-ecommerce3.svg" alt class="img-fluid" />
+										<img src="img/em/overview-carousel-1.jpg" alt class="img-fluid" />
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
+
+				<div id="home-intro" class="home-intro custom-home-intro bg-color-tertiary m-0">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-sm-8">
+								<p class="text-color-light m-0">
+									App disponível para Android e IOS
+									<span class="pt-0 text-2">Veja um exemplo na playstore para plataformas Android.</span>
+								</p>
+							</div>
+							<div class="col-lg-4 col-sm-4">
+								<a href="https://play.google.com/store/apps/developer?id=Espaço+Mercado" target="_blank" class="btn btn-primary custom-btn-style-1 text-uppercase font-weight-semibold float-md-right mt-1"><i class="icon-cloud-download icons mr-2"></i>BAIXE AGORA</a>
+							</div>
+						</div>
+					</div>
+				</div>
 
 				<section id="key-features" class="section bg-color-light m-0 pb-0">
 					<div class="container">
@@ -205,7 +220,7 @@
 						<div class="row">
 							<div class="col">
 								<div class="owl-carousel show-nav-title custom-arrows-style-1" data-plugin-options="{'responsive': {'767': {'items': 1}, '1200': {'items': 2}}, 'margin': 50, 'loop': false, 'dots': false, 'nav': true}">
-									<div class="text-center cursor-pointer card-cases" data-action="supermercado/">
+									<div class="text-center cursor-pointer card-cases" id="supermercado" data-action="supermercado/">
 										<article class="thumb-info custom-thumb-info-style-2" style="background-color: #A00202;">
 											<span class="thumb-info-wrapper m-0">
 												<a href="#" class="text-decoration-none" title="Porto Website">
@@ -224,7 +239,7 @@
 										</article>
 										<a href="supermercado/" class="btn btn-modern btn-light mt-3">Saiba Mais</a>
 									</div>
-									<div class="text-center cursor-pointer card-cases" data-action="supermercado/">
+									<div class="text-center cursor-pointer card-cases" id="farmacia" data-action="farmacia/">
 										<article class="thumb-info custom-thumb-info-style-2" style="background-color: #0286A0;">
 											<span class="thumb-info-wrapper m-0">
 												<a href="#" class="text-decoration-none" title="Porto Website">
@@ -314,7 +329,7 @@
 
 				<section class="section bg-color-light pt-0 pb-0">
 					<div class="container text-center">
-						<a href="contato/index.html" class="btn custom-btn-style-1 text-color-light m-auto" data-hash>Contato</a>
+						<a href="contato/index.html" class="btn custom-btn-style-1 text-color-light m-auto">Contato</a>
 					</div>
 				</section>
 

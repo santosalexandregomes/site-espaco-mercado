@@ -29,6 +29,12 @@ html .btn-primary:hover, html .btn-primary.hover {
 .custom-btn-style-1, .custom-btn-style-1:active {
     background: linear-gradient(to right, var(--color-primary) 0%, var(--color-secondary) 100%) !important;
 }
+
+.custom-btn-style-1._borders {
+    background: transparent !important;
+    border: 1px solid #ff8880 !important;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }

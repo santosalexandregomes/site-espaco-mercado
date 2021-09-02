@@ -14,8 +14,8 @@
 		<meta name="author" content="espacomercado.com.br">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+		<link rel="shortcut icon" href="../img/em/favicon.ico" type="image/x-icon" />
+    	<link rel="apple-touch-icon" href="../img/em/apple-touch-icon.png">
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
@@ -68,7 +68,7 @@
 								<div class="header-row">
 									<div class="header-logo">
 										<a href="../index.html">
-											<img width="50%" src="../img/em/logo.png">
+											<img width="60%" src="../img/em/logo.png">
 										</a>
 									</div>
 								</div>
@@ -155,6 +155,9 @@
 											<div class="col-md-6 form-group">
 												<select class="form-control" name="tamanho_da_empresa" id="tamanho_da_empresa" required>
 													<option hidden>Tamanho da Empresa</option>
+													<option value="pequeno">Pequeno</option>
+													<option value="medio">Médio</option>
+													<option value="grande">Grande</option>
 												</select>
 											</div>
 											<div class="col-md-6 form-group">
@@ -338,12 +341,50 @@
 				
 				$("#divBtnWhatsApp").removeClass('open');
 
+				$.ajax({
+					type:'POST',
+					url: '#',
+					data: {
+						nomeFormWhatsApp: $("#nomeFormWhatsApp").val(),
+						emailFormWhatsApp: $("#emailFormWhatsApp").val(),
+						telefoneFormWhatsApp: $("#telefoneFormWhatsApp").val(),
+						receberComunicacoesFormWhatsApp: $("#receberComunicacoesFormWhatsApp").is(':checked')
+					},
+					success: function(){
+					},
+					error: function(){    
+					},
+					complete: function(){
+					}
+				});
+
 			});
 
             $("#enviarContato").on('click', function(){
                 if(!$("#formContato").valid()){
 					return false;
 				}
+				$.ajax({
+					type:'POST',
+					url: '#',
+					data: {
+						name: $("#name").val(),
+						celular: $("#celular").val(),
+						email: $("#email").val(),
+						empresa: $("#empresa").val(),
+						segmento_da_empresa: $("#segmento_da_empresa").val(),
+						tamanho_da_empresa: $("#tamanho_da_empresa").val(),
+						carga_que_ocupa: $("#carga_que_ocupa").val(),
+						como_conheceu_a_em: $("#como_conheceu_a_em").val(),
+						feedback_sobre_nossa_empresa: $("#feedback_sobre_nossa_empresa").val(),
+					},
+					success: function(){
+					},
+					error: function(){    
+					},
+					complete: function(){
+					}
+				});
             });
 
 			setInterval(() => {

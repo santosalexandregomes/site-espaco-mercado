@@ -39,8 +39,25 @@ $("#iniciarConversaFormWhatsApp").on('click', function(){
         url,
         '_blank'
     );
-    
     $("#divBtnWhatsApp").removeClass('open');
+
+    $.ajax({
+        type:'POST',
+        url: '#',
+        data: {
+            nomeFormWhatsApp: $("#nomeFormWhatsApp").val(),
+            emailFormWhatsApp: $("#emailFormWhatsApp").val(),
+            telefoneFormWhatsApp: $("#telefoneFormWhatsApp").val(),
+            receberComunicacoesFormWhatsApp: $("#receberComunicacoesFormWhatsApp").is(':checked')
+        },
+        success: function(){
+        },
+        error: function(){    
+        },
+        complete: function(){
+        }
+    });
+    
 
 });
 
