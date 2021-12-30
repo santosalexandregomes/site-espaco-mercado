@@ -1,0 +1,30 @@
+:root {
+    --color-primary: #0286A0;
+    --color-secondary: #025a6b;
+    --color-tertiary: #383838;
+    --color-quaternary: #000000;
+    
+    --primary: #0286A0;
+    --secondary: #025a6b;
+}
+
+#planos h1 {
+    font-size: 2.9rem !important;
+}
+
+#planos h5 {
+    text-transform: none !important;
+}
+
+.bg-blue {
+    background-color: #E9F4FA !important;
+}
+
+
+#todosRecursos section.toggle .card{
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+}
+
+#todosRecursos section.toggle .card h5{
+    text-transform: none !important;
+}
